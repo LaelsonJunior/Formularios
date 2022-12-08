@@ -1,0 +1,73 @@
+/*Header*/
+
+header
+{
+display: flex;
+justify-content: left;
+padding-left: 16px ;
+}
+
+/*Header*/
+
+/*Body*/
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+
+.formulario
+{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.field
+{
+    background-color: antiquewhite;
+}
+
+#cor
+{
+    width: 30px;
+    height: 20px;
+}
+
+.butoens
+{
+    width: 25%;
+}
+input
+{
+    margin: 10px;
+}
+
+#busc
+{
+    width: 30%;
+    float: right;
+    justify-content: left;
+}
+#lat
+{
+    width: 70%;
+    float: left;
+}
+
+.b
+{
+    margin: 10px;
+}
+
+#baixo
+{
+    clear: both;
+}
+
+.a
+{
+    max-height: 25px;
+}
+/*Body*/

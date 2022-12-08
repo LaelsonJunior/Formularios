@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <header>
+        <h1>Modelo de Formulario</h1>
+    </header>
+        <div class="formulario">
+            <form action="back.php" method="get">
+                <fieldset class="field"> 
+                    <legend>Dados Pessoais</legend>
+                    <label for="nom">Nome:</label>
+                    <input id="nom" class="butoens" type="text" name="nome" placeholder="Nome" required  maxlength="50">
+                    
+
+                    <label for="num">Idade:</label>
+                    <input id="num" class="butoens" type="number" name="number" placeholder="Idade" required maxlength="3">
+
+                    <label for="ema">Email:</label>
+                    <input id="ema" class="butoens" type="email" name="email" placeholder="E-mail"  required >
+
+                    <br>
+
+                    <label for="sen">Senha:</label>
+                    <input id="sen" class="butoens" type="password" name="senha" placeholder="Senha">
+                    
+
+                    <label for="cor">Escolha cor:</label>
+                    <input id="cor" type="color" name="cor">
+
+                    <br>
+
+                    <label for="dat">Data de Nacimento:</label>
+                    <input id="dat" type="date" name="data" required>
+                    <label for="tim">Horas:</label>
+                    <input id="tim" type="time" name="hora" required>
+
+                    <br> 
+
+                    <label for="fil">Anexos:</label>
+                    <input id="fil" type="file" name="file" required>
+
+                    <br>
+                </fieldset>
+                <fieldset id="dados" class="field">
+                    <div id="lat">
+                        <legend>Dados Especificos</legend>
+                        <label for="ran">Nivel:</label>
+                        <input id="ran" type="range" name="nivel" min="1" max="10" step="1">
+
+                        <br> 
+
+                        <label for="mas">Masculino</label> <input id="mas" type="radio" name="sex">
+                        <label for="fem">Feminino</label> <input id="fem" type="radio"name="sex" >
+                        <label for="neu">Neutro</label> <input id="neu" type="radio" name="sex">
+
+                        <br> 
+
+                        <label>Hobbi:</label><br>
+                        <label for="esp">Esportes</label> <input id="esp" type="checkbox" name="esporte"><br>
+                        <label for="gam">Games</label> <input id="gam" type="checkbox"name="game" ><br>
+                        <label for="art">Artes</label> <input id="art" type="checkbox" name="arte" checked><br>
+                    </div>
+                    
+                    <div id="busc">
+                        <label for="bus">Buscar:</label>
+                        <input id="bus" type="search" name="busca">
+
+                        <br>
+
+                        <label for="cid">Selecionar Cidade:</label>
+                        <select id="cid" class="b">
+                        <option value=" ">--------------------</option>
+                        <option value="BH">Belo Horizonte</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        </select>
+
+                        <br>
+
+                        <textarea name="areaTexto" id="are" class="b" cols="30" rows="10" placeholder="Descrição" ></textarea>
+
+                    </div>
+            
+                   <div id="baixo">
+                    <input class="a" type="submit" value="Enviar">
+                    <input class="a" type="reset" value="Limpar">
+                    <button class="a" >Salvar</button>
+                   </div>
+                </fieldset>
+            
+            </form>
+        </div>
+    </body>
+</html>
